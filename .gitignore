@@ -1,2 +1,3 @@
 .DS_Store
+node_modules
 data/Basic_LinkedInDataExport_*.zip*
