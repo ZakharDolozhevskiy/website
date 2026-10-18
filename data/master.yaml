@@ -1,0 +1,345 @@
+basics:
+  name: "Zakhar Dolozhevskiy"
+  headline: "Senior / Staff Full-Stack Engineer | AI Automation & Cloud Microservices | TypeScript, React, Angular, Node.js, AWS, Kafka"
+  summary: |
+    Staff / Senior Full-Stack Engineer with 13+ years of experience (since 2013) engineering high-scale platforms across media streaming, e-commerce, travel, and real-time communication. Proven track record of delivering business-critical systems at companies ranging from fast-growing startups to tech giants like Microsoft and Byborg.
+
+    Currently driving organization-wide AI adoption beyond basic code completion. I build integrate agentic workflows, and establish "golden path" scenarios for Engineering, QA, and Management to systematically elevate development velocity and system quality.
+
+    Core Value & Leadership:
+
+    Complex Problem Solving: I take ownership of the hardest parts of the system, stepping in when teams are blocked and fixing root-cause production issues.
+
+    Platform Stability & Tech Strategy: Drive architectural refactoring, reduce technical debt, and ensure high performance under scale.
+
+    Culture & Mentorship: Elevate engineering standards through continuous knowledge sharing, code quality initiatives, and cross-team alignment.
+  location: "Remote"
+  email: "dolozhevskiy@gmail.com"
+  phone: null
+  links:
+    - { label: "LinkedIn", url: "https://linkedin.com/in/zakhardolozhevskiy" }
+    - { label: "GitHub", url: "https://github.com/ZakharDolozhevskiy" }
+
+work:
+  - company: "Level Access"
+    position: "Senior Full Stack Developer"
+    location: "Remote"
+    start: "2025-01"
+    end: present
+    employment_type: "full-time"
+    summary: "Cloud-native microservices and full-stack applications for AI-powered Web Accessibility (a11y) solutions."
+    highlights:
+      - text: "Build scalable full-stack applications and cloud-native microservices on AWS and Azure to drive AI-powered Web Accessibility (a11y) solutions."
+        tags: ["AWS", "Azure", "Microservices"]
+        metrics: null
+      - text: "Design robust web crawlers to audit multi-platform environments."
+        tags: []
+        metrics: null
+      - text: "Build accessible front-end interfaces."
+        tags: []
+        metrics: null
+      - text: "Integrate automated AI workflows using AWS Bedrock, OpenAI, and AI agents."
+        tags: ["AWS Bedrock", "OpenAI", "AI Agents"]
+        metrics: null
+      - text: "Replace manual audit processes with intelligent event-driven pipelines, significantly accelerating accessibility analysis and UI delivery for clients."
+        tags: []
+        metrics: null
+    technologies: ["TypeScript", "Python", "AWS (Bedrock)", "Angular", "Azure", "AI Agents", "OpenAI", "Kafka", "RabbitMQ", "PostgreSQL", "MongoDB", "Microservices"]
+
+  - company: "Docler Holding Luxembourg"
+    position: "Staff Frontend Engineer"
+    location: "Luxembourg"
+    work_mode: "Remote"
+    start: "2020-05"
+    end: "2025-09"
+    employment_type: "full-time"
+    summary: "Architecting and delivering complex, business-critical front-end solutions for high-scale web and streaming platforms serving thousands of users."
+    highlights:
+      - text: "Led end-to-end delivery of high-impact UI features, unblocking teams, and driving user-centric improvements across the streaming domain."
+        tags: []
+        metrics: null
+      - text: "Conducted deep debugging and root-cause analysis to fix critical production issues."
+        tags: []
+        metrics: null
+      - text: "Led major refactoring and tech-debt reduction initiatives that reduced bundle size and improved page load speed."
+        tags: []
+        metrics: "bundle size and page load speed improved (no numbers)"
+      - text: "Developed ML-based tooling and integrated AI-assisted workflows (such as automated PR analysis and reviews), adopted by 4 of 8 teams, to boost engineering velocity and code quality."
+        tags: ["ML", "AI"]
+        metrics: "adopted by 4 of 8 teams"
+      - text: "Conducted in-depth competitor analysis within streaming media."
+        tags: []
+        metrics: null
+      - text: "Evaluated emerging web technologies and facilitated tech adoption and knowledge sharing across teams."
+        tags: []
+        metrics: null
+    technologies: ["TypeScript", "JavaScript", "Node.js", "React", "Redux", "Next.js", "GraphQL", "Microservices"]
+
+  - company: "SoftServe"
+    position: "Technical Leader"
+    location: "Kharkiv, Ukraine"
+    start: "2019-02"
+    end: "2020-05"
+    employment_type: "full-time"
+    summary: null
+    highlights:
+      - text: "Led front-end and full-stack teams of 4-5 developers."
+        tags: []
+        metrics: "4-5 developers per team"
+      - text: "Drove agile processes, code reviews, mentoring, and cross-functional communication."
+        tags: []
+        metrics: null
+      - text: "Contributed to POCs, documentation, RFCs, pre-sales, and scope negotiations with clients."
+        tags: []
+        metrics: null
+      - text: "Delivered a refactored issue-tracking SPA built with GraphQL and a micro front-end architecture (Ruby on Rails, React, MobX, SSR)."
+        tags: ["GraphQL", "Ruby on Rails", "React", "MobX", "SSR", "Micro front-end"]
+        metrics: null
+      - text: "Delivered a high-performance SEO-optimized landing platform for a travel company (Node.js, React, Redux, GraphQL, microservices)."
+        tags: ["Node.js", "React", "Redux", "GraphQL", "Microservices"]
+        metrics: null
+    technologies: ["Node.js", "React", "Redux", "GraphQL", "Microservices", "Ruby on Rails", "MobX", "SSR"]
+
+  - company: "Microsoft"
+    position: "Software Engineer"
+    location: "Tallinn"
+    work_mode: "On-site"
+    start: "2018-09"
+    end: "2019-02"
+    employment_type: "full-time"
+    summary: "Web media core team working on the web calling experience."
+    highlights:
+      - text: "Focused on enhancing the web calling experience as a JS/TS expert on the web media core team."
+        tags: ["JavaScript", "TypeScript"]
+        metrics: null
+      - text: "Implemented reliable, cross-platform solutions for video conferencing, screen sharing, and media stream transfers."
+        tags: []
+        metrics: null
+      - text: "Integrated with various third-party libraries and applications."
+        tags: []
+        metrics: null
+      - text: "Worked on a core calling component used across multiple Microsoft products, including Skype, Microsoft Teams, Office 365, and other internal applications."
+        tags: []
+        metrics: null
+    technologies: ["TypeScript", "Python", "ML", "AI", "WebRTC", "ORTC", "ReactNative", "Electron", "Node.js"]
+
+  - company: "Pipedrive"
+    position: "Senior Full Stack Developer"
+    location: "Tallinn"
+    start: "2018-03"
+    end: "2018-09"
+    employment_type: null
+    summary: null
+    highlights:
+      - text: "Developed front-end services from scratch."
+        tags: []
+        metrics: null
+      - text: "Led the refactoring of legacy application components."
+        tags: []
+        metrics: null
+      - text: "Applied front-end optimization techniques and modern styling approaches."
+        tags: []
+        metrics: null
+      - text: "Worked with PHP and Node.js on the back end."
+        tags: ["PHP", "Node.js"]
+        metrics: null
+      - text: "Tackled complex technical challenges."
+        tags: []
+        metrics: null
+      - text: "Implemented a data migration module."
+        tags: []
+        metrics: null
+      - text: "Mentored front-end team members and facilitated knowledge sharing."
+        tags: []
+        metrics: null
+      - text: "Contributed actively to the front-end guild."
+        tags: []
+        metrics: null
+      - text: "Drove organization-level technical decisions with a focus on front-end rendering performance and UX."
+        tags: []
+        metrics: null
+    technologies: ["JavaScript", "React", "Flow", "PHP", "Node.js", "PostgreSQL", "CSS-in-JS"]
+
+  - company: "Pipedrive"
+    position: "Senior Front End Developer"
+    location: "Tallinn"
+    start: "2017-07"
+    end: "2018-03"
+    employment_type: null
+    summary: null
+    highlights: []
+    technologies: ["JavaScript", "React", "Flow", "PHP", "Node.js", "PostgreSQL", "CSS-in-JS"]
+
+  - company: "Brightgrove Ltd."
+    position: "Software Engineer (FE)"
+    location: "Kharkiv, Ukraine"
+    start: "2016-04"
+    end: "2017-07"
+    employment_type: null
+    summary: null
+    highlights:
+      - text: "Analyzed and prepared a legacy front-end application for refactoring and redesign into a SPA using React and Redux."
+        tags: ["React", "Redux"]
+        metrics: null
+      - text: "Architected the new application structure and drove key implementation decisions."
+        tags: []
+        metrics: null
+      - text: "Established a comprehensive testing strategy, including unit and integration tests, and oversaw the full testing process."
+        tags: []
+        metrics: null
+      - text: "Developed a fully responsive mobile version of the application using AWD techniques."
+        tags: []
+        metrics: null
+      - text: "Built a large-scale front-end application with Angular 2 and Dart."
+        tags: ["Angular 2", "Dart"]
+        metrics: null
+    technologies: ["JavaScript", "React", "AngularJS", "Dart", "TypeScript", "React Native", "Redux", "Angular 2"]
+
+  - company: "EPAM Systems"
+    position: "Software Engineer"
+    location: "Kharkiv, Ukraine"
+    work_mode: "On-site"
+    start: "2014-09"
+    end: "2016-04"
+    employment_type: "full-time"
+    summary: null
+    highlights:
+      - text: "Contributed to two large-scale e-commerce projects and multiple SPAs and modules."
+        tags: []
+        metrics: "2 large-scale e-commerce projects"
+      - text: "Solved complex front-end challenges, resolved bugs, and optimized front-end performance across products."
+        tags: []
+        metrics: null
+      - text: "Established an efficient cross-team code review process."
+        tags: []
+        metrics: null
+      - text: "Participated in the hiring and evaluation of front-end developers."
+        tags: []
+        metrics: null
+      - text: "Redesigned and modernized legacy Angular-based modules."
+        tags: ["Angular"]
+        metrics: null
+      - text: "Designed and developed an indoor navigation application using Ionic and iBeacons, with a Node.js back end."
+        tags: ["Ionic", "iBeacons", "Node.js"]
+        metrics: null
+      - text: "Presented the indoor navigation project at an internal knowledge-sharing conference."
+        tags: []
+        metrics: null
+    technologies: ["JavaScript", "Node.js", "Angular", "React", "Ionic", "JSP", "jQuery", "HTML", "CSS", "iBeacons"]
+
+  - company: "G5 Entertainment AB"
+    position: "QA Engineer"
+    location: "Kharkiv, Ukraine"
+    work_mode: "On-site"
+    start: "2013-11"
+    end: "2014-08"
+    employment_type: "full-time"
+    summary: null
+    highlights:
+      - text: "Organized and streamlined the software testing process for mobile arcade and quest games."
+        tags: []
+        metrics: null
+      - text: "Conducted thorough product analysis, identified and reported bugs, and tracked issues through to resolution to ensure continuous application improvement."
+        tags: []
+        metrics: null
+      - text: "Collaborated with project managers to support the delivery of new features."
+        tags: []
+        metrics: null
+      - text: "Developed testing documentation that resulted in faster testing iterations and a shorter build validation cycle."
+        tags: []
+        metrics: null
+    technologies: []
+
+projects:
+  - name: "Refactored issue-tracking SPA (SoftServe)"
+    url: null
+    description: "Refactored issue-tracking SPA built with GraphQL and a micro front-end architecture."
+    highlights: []
+    technologies: ["GraphQL", "Ruby on Rails", "React", "MobX", "SSR"]
+    start: null
+    end: null
+  - name: "SEO-optimized landing platform for a travel company (SoftServe)"
+    url: null
+    description: "High-performance SEO-optimized landing platform for a travel company."
+    highlights: []
+    technologies: ["Node.js", "React", "Redux", "GraphQL", "Microservices"]
+    start: null
+    end: null
+  - name: "Indoor navigation application (EPAM Systems)"
+    url: null
+    description: "Indoor navigation application designed and developed using Ionic and iBeacons, with a Node.js back end. Presented at an internal knowledge-sharing conference."
+    highlights: []
+    technologies: ["Ionic", "iBeacons", "Node.js"]
+    start: null
+    end: null
+
+education:
+  - institution: "O.M. Beketov National University of Urban Economy in Kharkiv"
+    degree: "Master's Degree"
+    field: null
+    start: "2008"
+    end: "2013"
+    notes: null
+
+skills:
+  - category: "Languages"
+    items: ["TypeScript", "JavaScript", "Python", "PHP", "Dart", "Flow"]
+  - category: "Frontend"
+    items: ["React", "Redux", "MobX", "Next.js", "Angular", "AngularJS", "Angular 2", "React Native", "Ionic", "Electron", "jQuery", "HTML", "CSS", "CSS-in-JS", "JSP", "SSR", "Micro front-end"]
+  - category: "Backend"
+    items: ["Node.js", "Ruby on Rails", "GraphQL", "Microservices"]
+  - category: "Messaging"
+    items: ["Kafka", "RabbitMQ"]
+  - category: "Databases"
+    items: ["PostgreSQL", "MongoDB"]
+  - category: "Cloud"
+    items: ["AWS", "AWS Bedrock", "Azure"]
+  - category: "AI / ML"
+    items: ["AI Agents", "OpenAI", "ML", "Agentic workflows", "AI-assisted code review"]
+  - category: "Real-time communication / IoT"
+    items: ["WebRTC", "ORTC", "iBeacons"]
+  - category: "Testing"
+    items: ["Unit testing", "Integration testing"]
+  - category: "Soft skills"
+    items: ["Mentoring", "Code review", "Knowledge sharing", "Agile processes", "Cross-functional communication", "Technical leadership", "Pre-sales", "RFCs"]
+
+languages:
+  - { language: "English", level: "C1 (fluent)" }
+  - { language: "Ukrainian", level: "Native (fluent)" }
+
+certifications:
+  - name: "AWS Certified Solutions Architect - Associate (SAA)"
+    issuer: "Amazon Web Services (AWS)"
+    date: "2019-11"
+    credential_id: "GVNB1PGKFFBQQM9E"
+    url: null
+
+awards_publications_volunteering: []
+
+interests: []
+
+recommendations:
+  - author: "Andrei Bunulu"
+    author_title: "Staff AI Full Stack Engineer | AI Transformation | High-Scale Streaming & SaaS | React, TypeScript, Node.js"
+    relationship: "Worked with Zakhar on the same team"
+    date: "2026-03-31"
+    text: |
+      I'd highly recommend Zakhar for any senior or staff-level frontend engineering role. He's the kind of engineer you want on your most important projects. Whether it was evaluating new technologies, sharing knowledge across teams, or contributing to engineering process improvements like AI-assisted code review workflows, he consistently raised the bar for everyone around him.
+  - author: "Valter Kungla"
+    author_title: "Senior Engineering Manager at Katana, ex-Twilio, ex-Pipedrive, Certified Team Coach, Founder of RoleDream.com"
+    relationship: "Managed Zakhar directly"
+    date: "2020-11-09"
+    text: |
+      Zakhar is quite unique person - he solved all the engineering initiatives with ease and high quality. I mostly hear about him, when things were are already solved.
+      He is a good team player, hard worker and top of the class engineer.
+      Cooperation with you was awesome, thank you!
+  - author: "Oksana Spolnyk"
+    author_title: "Frontend Team Lead | React · TypeScript · Frontend Architecture"
+    relationship: "Worked with Zakhar on the same team"
+    date: "2018-10-15"
+    text: |
+      I had been working with Zakhar about 3 years in different companies and it was a great time working on the same project!
+
+      I was particularly impressed by Zakhar's ability to handle even the toughest tasks using not well documented and specific technologies. He was a good mentor when I came to the project and helped integrate into the development process quickly. He is ready to be the friendly shoulder in any difficult situation and give good ideas.
+
+      Hope to work together again :)

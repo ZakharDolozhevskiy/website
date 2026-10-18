@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zakhar Dolozhevskiy - Senior / Staff Full-Stack Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Quicksand:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --slate: #5b7088;
+    --orange: #d4964a;
+    --orange-text: #9a5a10;
+    --slate-text: #3a5068;
+    --sky: #d9e8fb;
+    --ink: #1c1c1c;
+    --muted: #555555;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+  body {
+    font-family: "Open Sans", "Segoe UI", Arial, sans-serif;
+    font-size: 9.5pt;
+    line-height: 1.4;
+    color: var(--ink);
+    background: #8a8f96;
+    padding: 24px 0;
+  }
+
+  .page {
+    position: relative;
+    width: 210mm;
+    height: 297mm;
+    margin: 0 auto 24px;
+    background: linear-gradient(to right, var(--sky) 70mm, #fff 70mm);
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 70mm 1fr;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, .35);
+  }
+
+  /* Decorative shapes (page 1 only) */
+  .shape { position: absolute; z-index: 0; }
+  .shape-slate {
+    top: 0; left: 0; width: 76mm; height: 62mm;
+    background: var(--slate);
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+  }
+  .shape-orange {
+    top: 0; right: 0; width: 140mm; height: 20mm;
+    background: var(--orange);
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+  }
+
+  /* Sidebar */
+  .side { position: relative; z-index: 1; padding: 24mm 8mm 10mm 9mm; }
+  .page:not(.first) .side { padding-top: 14mm; }
+  .page.first .side { padding-top: 20mm; }
+
+  .photo {
+    width: 38mm; height: 38mm;
+    border-radius: 50%;
+    border: 1.2mm solid #fff;
+    overflow: hidden;
+    margin: 0 auto 6mm;
+    background: #fff;
+  }
+  .photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 12%; display: block; }
+
+  .contact { list-style: none; margin-bottom: 5mm; }
+  .contact li {
+    display: flex; align-items: center; gap: 2.5mm;
+    margin-bottom: 2.2mm;
+    word-break: break-all;
+    font-size: 8.5pt;
+  }
+  .contact svg { flex: 0 0 4mm; width: 4mm; height: 4mm; fill: var(--ink); }
+  .contact a { color: inherit; text-decoration: none; }
+
+  .side h3 {
+    font-family: "Quicksand", "Open Sans", sans-serif;
+    font-size: 11.5pt;
+    color: var(--slate-text);
+    margin: 5mm 0 2.2mm;
+  }
+  .side h3:first-of-type { margin-top: 0; }
+  .side .item { margin-bottom: 2.4mm; }
+  .side .item b { display: block; font-size: 9pt; }
+  .side .item span { display: block; font-size: 8.5pt; }
+
+  .side h4 { font-size: 8.4pt; font-weight: 700; margin: 2.2mm 0 .8mm; }
+  .side h4:first-of-type { margin-top: 0; }
+
+  .tags { display: flex; flex-wrap: wrap; gap: 1.1mm; }
+  .tags li {
+    list-style: none;
+    background: #fff;
+    border-radius: 1mm;
+    padding: .3mm 1.7mm;
+    font-size: 7.6pt;
+  }
+
+  /* Main */
+  .main { position: relative; z-index: 1; padding: 17mm 12mm 10mm 11mm; }
+  .page:not(.first) .main { padding-top: 11mm; }
+
+  .name { font-size: 17pt; font-weight: 700; line-height: 1.15; }
+  .role {
+    font-family: "Quicksand", "Open Sans", sans-serif;
+    color: var(--orange-text);
+    font-size: 11pt;
+    font-weight: 700;
+    margin: 1mm 0 3mm;
+  }
+  .lead { margin-bottom: 1.5mm; }
+
+  .main h2 {
+    font-family: "Quicksand", "Open Sans", sans-serif;
+    color: var(--orange-text);
+    font-size: 12pt;
+    margin: 5mm 0 3mm;
+  }
+
+  /* Timeline */
+  .timeline { position: relative; padding-left: 6mm; border-left: .35mm solid var(--ink); margin-left: 1mm; }
+  .entry { position: relative; margin-bottom: 3.6mm; break-inside: avoid; }
+  .entry::before {
+    content: "";
+    position: absolute;
+    left: calc(-6mm - 1.5mm);
+    top: 1.2mm;
+    width: 2.6mm; height: 2.6mm;
+    border-radius: 50%;
+    background: var(--ink);
+  }
+  .entry:last-child { margin-bottom: 0; }
+  .entry h4 { font-size: 9.5pt; font-weight: 700; }
+  .entry h4 .promo { font-weight: 400; font-size: 8.5pt; color: var(--muted); }
+  .entry h4.second { margin-top: 1.4mm; }
+  .meta { color: var(--muted); font-size: 8.5pt; margin-bottom: 1mm; }
+  .meta .co { color: var(--orange-text); font-weight: 600; }
+  .stack { font-size: 8pt; color: var(--slate-text); margin-bottom: 1mm; }
+  .stack b { color: var(--ink); }
+  .entry p { margin-bottom: 1mm; }
+  .entry ul { margin: 0 0 0 4.5mm; }
+  .entry li { margin-bottom: .5mm; }
+
+  @page { size: A4; margin: 0; }
+  @media print {
+    body { background: #fff; padding: 0; }
+    html, body { height: auto; }
+    .page { margin: 0; height: 296mm; box-shadow: none; page-break-after: always; break-after: page; }
+    .page:last-child { page-break-after: auto; break-after: auto; }
+  }
+</style>
+</head>
+<body>
+
+<!-- PAGE 1 -->
+<div class="page first">
+  <div class="shape shape-slate"></div>
+  <div class="shape shape-orange"></div>
+
+  <aside class="side">
+    <div class="photo"><img src="../photo.jpg" alt="Zakhar Dolozhevskiy"></div>
+
+    <ul class="contact">
+      <li>
+        <svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5z"/></svg>
+        <a href="mailto:dolozhevskiy@gmail.com">dolozhevskiy@gmail.com</a>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24"><path d="M4 3h16a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm3 6v9h2.5V9H7zm1.2-3.5a1.4 1.4 0 1 0 0 2.8 1.4 1.4 0 0 0 0-2.8zM11 9v9h2.5v-4.8c0-1.2.6-1.9 1.6-1.9s1.4.7 1.4 1.8V18H19v-5.2c0-2.2-1.2-3.9-3.2-3.9-1.1 0-1.9.5-2.3 1.2V9H11z"/></svg>
+        <a href="https://linkedin.com/in/zakhardolozhevskiy">in/zakhardolozhevskiy</a>
+      </li>
+    </ul>
+
+    <h3>Skills</h3>
+    <h4>Programming</h4>
+    <ul class="tags"><li>TypeScript</li><li>JavaScript</li><li>Python</li></ul>
+    <h4>Frontend</h4>
+    <ul class="tags"><li>React</li><li>Next.js</li><li>Redux</li><li>Angular</li><li>React Native</li></ul>
+    <h4>Backend &amp; Data</h4>
+    <ul class="tags"><li>Node.js</li><li>GraphQL</li><li>Microservices</li><li>Kafka</li><li>RabbitMQ</li><li>PostgreSQL</li><li>MongoDB</li></ul>
+    <h4>Cloud</h4>
+    <ul class="tags"><li>AWS</li><li>AWS Bedrock</li><li>Azure</li></ul>
+    <h4>AI</h4>
+    <ul class="tags"><li>AI Agents</li><li>OpenAI</li></ul>
+    <h4>Real-time</h4>
+    <ul class="tags"><li>WebRTC</li></ul>
+
+    <h3>Languages</h3>
+    <div class="item"><b>English</b><span>C1 (fluent)</span></div>
+    <div class="item"><b>Ukrainian</b><span>Native (fluent)</span></div>
+
+    <h3>Education</h3>
+    <div class="item"><b>O.M. Beketov National University of Urban Economy in Kharkiv</b><span>Master's Degree</span><span>2008 - 2013</span></div>
+
+    <h3>Certifications</h3>
+    <div class="item">
+      <b>AWS Certified Solutions Architect - Associate (SAA)</b>
+      <span>Amazon Web Services (AWS)</span>
+      <span>Issued Nov 2019</span>
+      <span>Credential ID: GVNB1PGKFFBQQM9E</span>
+    </div>
+  </aside>
+
+  <main class="main">
+    <h1 class="name">Zakhar Dolozhevskiy</h1>
+    <div class="role">Senior / Staff Full-Stack Engineer</div>
+    <p class="lead">Full-Stack Engineer with 13+ years of experience (since 2013) engineering high-scale platforms across media streaming, e-commerce, travel, and real-time communication. Proven track record of delivering business-critical systems at companies including Microsoft, Pipedrive and Docler.</p>
+    <p class="lead">Currently driving organization-wide AI adoption beyond basic code completion. I build and integrate agentic workflows, and establish "golden path" scenarios for Engineering, QA, and Management to systematically elevate development velocity and system quality.</p>
+
+    <h2>Professional Experience</h2>
+    <div class="timeline">
+
+      <div class="entry">
+        <h4>Senior Full Stack Developer</h4>
+        <div class="meta">Jan 2025 - Present &middot; <span class="co">Level Access</span> &middot; Remote</div>
+        <div class="stack"><b>Stack:</b> TypeScript, Python, AWS (Bedrock), Angular, Azure, AI Agents, OpenAI, Kafka, RabbitMQ, PostgreSQL, MongoDB, Microservices</div>
+        <ul>
+          <li>Build scalable full-stack applications, accessible front-end interfaces, and cloud-native microservices on AWS and Azure to drive AI-powered Web Accessibility (a11y) solutions.</li>
+          <li>Design robust web crawlers to audit multi-platform environments.</li>
+          <li>Integrate automated AI workflows using AWS Bedrock, OpenAI, and AI agents.</li>
+          <li>Replace manual audit processes with intelligent event-driven pipelines, significantly accelerating accessibility analysis and UI delivery for clients.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <h4>Staff Frontend Engineer</h4>
+        <div class="meta">May 2020 - Sep 2025 &middot; <span class="co">Docler Holding Luxembourg</span> &middot; Luxembourg, Remote</div>
+        <div class="stack"><b>Stack:</b> TypeScript, JavaScript, Node.js, React, Redux, Next.js, GraphQL, Microservices</div>
+        <ul>
+          <li>Architected and delivered complex, business-critical front-end solutions for high-scale web and streaming platforms serving thousands of users.</li>
+          <li>Led end-to-end delivery of high-impact UI features, unblocking teams, and driving user-centric improvements across the streaming domain.</li>
+          <li>Conducted deep debugging and root-cause analysis to fix critical production issues; led major refactoring and tech-debt reduction initiatives that reduced bundle size and improved page load speed.</li>
+          <li>Developed ML-based tooling and integrated AI-assisted workflows (such as automated PR analysis and reviews), adopted by 4 of 8 teams, to boost engineering velocity and code quality.</li>
+          <li>Conducted in-depth competitor analysis within streaming media; evaluated emerging web technologies and facilitated tech adoption and knowledge sharing across teams.</li>
+        </ul>
+      </div>
+
+    </div>
+  </main>
+</div>
+
+<!-- PAGE 2 -->
+<div class="page">
+  <aside class="side">
+  </aside>
+
+  <main class="main">
+    <div class="timeline">
+
+      <div class="entry">
+        <h4>Technical Leader</h4>
+        <div class="meta">Feb 2019 - May 2020 &middot; <span class="co">SoftServe</span> &middot; Kharkiv, Ukraine</div>
+        <ul>
+          <li>Led front-end and full-stack teams of 4-5 developers; drove agile processes, code reviews, mentoring, and cross-functional communication.</li>
+          <li>Contributed to POCs, documentation, RFCs, pre-sales, and scope negotiations with clients.</li>
+          <li>Delivered a refactored issue-tracking SPA built with GraphQL and a micro front-end architecture (Ruby on Rails, React, MobX, SSR).</li>
+          <li>Delivered a high-performance SEO-optimized landing platform for a travel company (Node.js, React, Redux, GraphQL, microservices).</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <h4>Software Engineer</h4>
+        <div class="meta">Sep 2018 - Feb 2019 &middot; <span class="co">Microsoft</span> &middot; Tallinn, On-site</div>
+        <ul>
+          <li>Enhanced the web calling experience as a JS/TS expert on the web media core team.</li>
+          <li>Implemented reliable, cross-platform solutions for video conferencing, screen sharing, and media stream transfers; integrated with various third-party libraries and applications.</li>
+          <li>Worked on a core calling component used across multiple Microsoft products, including Skype, Microsoft Teams, Office 365, and other internal applications.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <h4>Senior Full Stack Developer <span class="promo">(promoted from Senior Front End Developer)</span></h4>
+        <div class="meta">Jul 2017 - Sep 2018 &middot; <span class="co">Pipedrive</span> &middot; Tallinn</div>
+        <ul>
+          <li>Developed front-end services from scratch and led the refactoring of legacy application components; worked with PHP and Node.js on the back end and implemented a data migration module.</li>
+          <li>Mentored front-end team members, contributed actively to the front-end guild, and drove organization-level technical decisions focused on front-end rendering performance and UX.</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <h2>Earlier Experience</h2>
+    <div class="timeline">
+
+      <div class="entry">
+        <h4>Software Engineer (FE)</h4>
+        <div class="meta">Apr 2016 - Jul 2017 &middot; <span class="co">Brightgrove Ltd.</span> &middot; Kharkiv, Ukraine</div>
+        <p>Prepared a legacy front-end application for redesign into a SPA (React, Redux), architected the new structure, established a testing strategy, and built a large-scale Angular 2 and Dart application.</p>
+      </div>
+
+      <div class="entry">
+        <h4>Software Engineer</h4>
+        <div class="meta">Sep 2014 - Apr 2016 &middot; <span class="co">EPAM Systems</span> &middot; Kharkiv, Ukraine, On-site</div>
+        <p>Contributed to two large-scale e-commerce projects, established a cross-team code review process, and developed an indoor navigation app (Ionic, iBeacons, Node.js) presented at an internal knowledge-sharing conference.</p>
+      </div>
+
+      <div class="entry">
+        <h4>QA Engineer</h4>
+        <div class="meta">Nov 2013 - Aug 2014 &middot; <span class="co">G5 Entertainment AB</span> &middot; Kharkiv, Ukraine, On-site</div>
+        <p>Organized and streamlined the software testing process for mobile arcade and quest games; developed testing documentation that resulted in faster testing iterations and a shorter build validation cycle.</p>
+      </div>
+
+    </div>
+  </main>
+</div>
+
+</body>
+</html>
